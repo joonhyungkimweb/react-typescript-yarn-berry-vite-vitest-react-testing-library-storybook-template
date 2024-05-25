@@ -39,3 +39,8 @@ dist-ssr
 .pnp.*
 
 .vite
+
+# Test coverage
+coverage
+
+
