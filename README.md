@@ -115,7 +115,6 @@ storybook-static
 - vitest 설치 : https://vitest.dev/guide/
 - eslint-plugin-testing-library : https://github.com/testing-library/eslint-plugin-testing-library
 - eslint-plugin-jest-dom : https://github.com/testing-library/eslint-plugin-jest-dom
-- storybook 설치 :
 - Storybook 설치/cache관련: https://storybook.js.org/docs/get-started/install
 - vscode tsserver codeWatcher 에러 관련 이슈 : https://github.com/microsoft/vscode/issues/212042
 - ZipFS : https://marketplace.visualstudio.com/items?itemName=arcanis.vscode-zipfs
