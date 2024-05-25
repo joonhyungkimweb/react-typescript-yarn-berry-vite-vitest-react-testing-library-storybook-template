@@ -43,4 +43,6 @@ dist-ssr
 # Test coverage
 coverage
 
-
+# Storybook
+storybook-static
+*storybook.log
