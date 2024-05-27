@@ -5,6 +5,14 @@
 React를 위한 Template입니다.
 Yarn Berry를 사용해 PnP 방식으로 의존성을 관리합니다. Vite React + TS를 기반으로 PnP 및 test 환경 구성을 위한 설정들이 포함되어 있습니다.
 
+## template 설치(degit)
+
+```bash
+degit https://github.com/joonhyungkimweb/react-typescript-yarn-berry-vite-vitest-react-testing-library-storybook-template
+```
+
+- 참고 : https://github.com/Rich-Harris/degit
+
 ## 사용 스택
 
 - React
