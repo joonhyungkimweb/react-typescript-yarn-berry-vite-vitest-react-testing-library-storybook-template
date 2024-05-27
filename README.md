@@ -92,7 +92,7 @@ overrides: [
 
 ## vite-env.d.ts 설정
 
-- vscode에서 devDependecy intellisense가 적용 안되는 현상이 있어 아래 revernce들을 추가해줍니다.
+- vscode에서 devDependecy intellisense가 적용 안되는 현상이 있어 아래 reference들을 추가해줍니다.
 
 ```typescript
 /// <reference types="vite/client" />
