@@ -47,7 +47,7 @@ cacheDir: "./.vite",
 1. 개발 의존성을 추가합니다.
 
 ```bash
-yarn add -D jsdom vitest @vitest/coverage-v8 @testing-library/react @testing-library/jest-dom @testing-library/user-event
+yarn add -D jsdom vitest @vitest/coverage-v8 @testing-library/react @testing-library/jest-dom @testing-library/user-event eslint-plugin-jest-dom eslint-plugin-testing-library
 ```
 
 2. eslint 설정에 플러그인을 추가합니다.
@@ -65,6 +65,18 @@ overrides: [
 		},
 	],
 };
+```
+
+3. tsconfig에 type을 추가합니다.
+
+```json
+{
+  "compilerOptions": {
+    ...다른 설정
+    "types": ["vitest/globals", "@testing-library/jest-dom"]
+  }
+}
+
 ```
 
 ## Storybook 설치
