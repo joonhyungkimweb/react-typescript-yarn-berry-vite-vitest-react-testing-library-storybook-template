@@ -47,7 +47,7 @@ cacheDir: "./.vite",
 1. 개발 의존성을 추가합니다.
 
 ```bash
-yarn add -D jsdom vitest @vitest/coverage-v8 @testing-library/react @testing-library/jest-dom @testing-library/user-event eslint-plugin-jest-dom eslint-plugin-testing-library
+yarn add -D jsdom vitest @vitest/coverage-v8 @testing-library/react @testing-library/jest-dom @testing-library/user-event eslint-plugin-jest-dom eslint-plugin-testing-library @testing-library/dom": "^10.1.0
 ```
 
 2. eslint 설정에 플러그인을 추가합니다.
@@ -89,6 +89,18 @@ overrides: [
 - vscode에서 intellisense 사용하려면 프로젝트에 포함된 typescript를 사용해야합니다. `.vscode/settings.json`파일의 `"typescript.tsdk": ".yarn/sdks/typescript/lib"` 설정을 참고해주세요.
 - pnp 방식은 zip파일을 이용하기 때문에, vscode에 ZipFS 확장 프로그램을 설치해야 typescript가 의존성을 읽을 수 있습니다.
 - VS Code 1.89이상 버전에서 tsserver가 실행이 안되는 vsCodeWatcher 관련 에러가 있습니다. setting.json에서 `"typescript.tsserver.experimental.useVsCodeWatcher"`를 `false`로 설정해야 합니다.
+
+## vite-env.d.ts 설정
+
+- vscode에서 devDependecy intellisense가 적용 안되는 현상이 있어 아래 revernce들을 추가해줍니다.
+
+```typescript
+/// <reference types="vite/client" />
+/// <reference types="@testing-library/react" />
+/// <reference types="@testing-library/user-event" />
+/// <reference types="@storybook/react" />
+/// <reference types="@storybook/test" />
+```
 
 ## .gitignore 추가 내용
 
